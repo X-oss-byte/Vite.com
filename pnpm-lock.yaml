@@ -620,8 +620,8 @@ importers:
         version: file:playground/external/dep-that-requires
     devDependencies:
       slash3:
-        specifier: npm:slash@^3.0.0
-        version: /slash@3.0.0
+        specifier: npm:slash@^5.1.0
+        version: /slash@5.1.0
       slash5:
         specifier: npm:slash@^5.1.0
         version: /slash@5.1.0
@@ -635,8 +635,8 @@ importers:
   playground/external/dep-that-imports:
     dependencies:
       slash3:
-        specifier: npm:slash@^3.0.0
-        version: /slash@3.0.0
+        specifier: npm:slash@^5.1.0
+        version: /slash@5.1.0
       slash5:
         specifier: npm:slash@^5.1.0
         version: /slash@5.1.0
@@ -647,8 +647,8 @@ importers:
   playground/external/dep-that-requires:
     dependencies:
       slash3:
-        specifier: npm:slash@^3.0.0
-        version: /slash@3.0.0
+        specifier: npm:slash@^5.1.0
+        version: /slash@5.1.0
       slash5:
         specifier: npm:slash@^5.1.0
         version: /slash@5.1.0
@@ -1878,6 +1878,7 @@ packages:
   /@babel/highlight@7.22.13:
     resolution: {integrity: sha512-C/BaXcnnvBCmHTpz/VGZ8jgtE2aYlW4hxDhseJAWZb7gqGM/qtCK6iZUb0TyKFf7BOUsBH7Q7fkRsDRhg1XklQ==}
     engines: {node: '>=6.9.0'}
+    requiresBuild: true
     dependencies:
       '@babel/helper-validator-identifier': 7.22.15
       chalk: 2.4.2
@@ -6900,6 +6901,7 @@ packages:
   /image-size@0.5.5:
     resolution: {integrity: sha512-6TDAlDPZxUFCv+fuOkIoXT/V/f3Qbq8e37p+YOiYrUv3v9cc3/6x78VdfPgFVaB9dZYeLUfKgHRebpkm/oP2VQ==}
     engines: {node: '>=0.10.0'}
+    deprecated: Please migrate to image-size@2.x
     hasBin: true
     requiresBuild: true
     dev: true
@@ -9262,6 +9264,7 @@ packages:
   /slash@3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
+    dev: true
 
   /slash@4.0.0:
     resolution: {integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==}
@@ -10458,7 +10461,7 @@ packages:
     resolution: {directory: playground/external/dep-that-imports, type: directory}
     name: '@vitejs/test-dep-that-imports'
     dependencies:
-      slash3: /slash@3.0.0
+      slash3: /slash@5.1.0
       slash5: /slash@5.1.0
       vue: 3.3.4
     dev: false
@@ -10467,7 +10470,7 @@ packages:
     resolution: {directory: playground/external/dep-that-requires, type: directory}
     name: '@vitejs/test-dep-that-requires'
     dependencies:
-      slash3: /slash@3.0.0
+      slash3: /slash@5.1.0
       slash5: /slash@5.1.0
       vue: 3.3.4
     dev: false
